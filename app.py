@@ -28,29 +28,45 @@ def home():
     <head>
 
         <title>UPSC PYQ Search Engine</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <style>
+
+            * {
+                box-sizing: border-box;
+            }
 
             body {
                 font-family: Arial;
                 background-color: #f5f5f5;
                 text-align: center;
                 margin-top: 100px;
+                padding: 0 20px;
             }
 
             h1 {
                 color: darkblue;
                 margin-bottom: 10px;
+                font-size: clamp(22px, 5vw, 36px);
             }
 
             .tagline {
                 color: gray;
                 margin-bottom: 40px;
-                font-size: 18px;
+                font-size: clamp(14px, 3vw, 18px);
+            }
+
+            .search-bar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 10px;
             }
 
             input {
-                width: 600px;
+                width: 100%;
+                max-width: 600px;
                 padding: 14px;
                 font-size: 18px;
                 border-radius: 10px;
@@ -65,7 +81,15 @@ def home():
                 background-color: darkblue;
                 color: white;
                 cursor: pointer;
-                margin-left: 10px;
+                width: 100%;
+                max-width: 600px;
+            }
+
+            @media (min-width: 600px) {
+                button {
+                    width: auto;
+                    max-width: none;
+                }
             }
 
             button:hover {
@@ -75,7 +99,8 @@ def home():
             .footer-text {
                 margin-top: 80px;
                 color: gray;
-                font-size: 18px;
+                font-size: 16px;
+                padding: 0 10px;
             }
 
             .social-bar {
@@ -143,17 +168,16 @@ def home():
         </p>
 
         <form action="/search" method="get">
-
-            <input
-                type="text"
-                name="q"
-                placeholder="Search UPSC keywords..."
-            >
-
-            <button type="submit">
-                Search
-            </button>
-
+            <div class="search-bar">
+                <input
+                    type="text"
+                    name="q"
+                    placeholder="Search UPSC keywords..."
+                >
+                <button type="submit">
+                    Search
+                </button>
+            </div>
         </form>
 
         <p class="footer-text">
@@ -196,8 +220,6 @@ def search_questions(q: str):
         for word in words
         if word.lower() not in stop_words
     ]
-
-    words = words[:25]
 
     # If all words removed
     if len(words) == 0:
