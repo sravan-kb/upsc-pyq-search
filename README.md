@@ -1,5 +1,7 @@
 # UPSC PYQ Search
 
+**Connect with me:** [LinkedIn](https://www.linkedin.com/in/sravan-branwal) • [GitHub](https://github.com/sravan-kb)
+
 A fast and lightweight search engine for UPSC Previous Year Questions, built with FastAPI and PostgreSQL.
 
 🔗 **Live:** [upsc-pyq-search.onrender.com](https://upsc-pyq-search.onrender.com)
