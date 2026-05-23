@@ -31,7 +31,4 @@ A searchable UPSC Previous Year Questions search engine built using FastAPI and 
 - Better ranking
 - Full-text search
 
-## Run Locally
 
-```bash
-uvicorn app:app --reload
