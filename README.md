@@ -32,7 +32,7 @@ A fast and lightweight search engine for UPSC Previous Year Questions, built wit
 
 ## Future Improvements
 
-- Add older PYQs (2024, 2023, 2022, ...)
+- Add older PYQs (2025, 2024, 2023, ...)
 - Mains questions
 - Subject and year filters
 - Full-text search with PostgreSQL tsvector
