@@ -277,9 +277,10 @@ def search_questions(q: str):
 
         ORDER BY
             score DESC,
+            year DESC,
             question_number ASC
 
-        LIMIT 20
+        LIMIT 30
     """
 
     query = text(sql)

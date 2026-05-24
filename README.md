@@ -53,11 +53,11 @@ Feel free to open an issue or reach out directly on [LinkedIn](https://www.linke
 - Better relevance ranking
 - Fix question text structure from OCR
 
-## About the Builder
+## My Story
 
 I spent 8 years preparing for UPSC and couldn't clear it. During that time I always struggled to search through previous year questions quickly — so I built this tool for every aspirant who felt the same.
 
-I am currently learning software development and actively looking for a job opportunity. If you think I can contribute to your team, please reach out.
+I am currently pursuing Big Data Analytics from CDAC and actively looking for a job opportunity. If you think I can contribute to your team, please reach out.
 
 📩 [LinkedIn](https://www.linkedin.com/in/sravan-branwal) • [GitHub](https://github.com/sravan-kb)
 
