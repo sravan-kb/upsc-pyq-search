@@ -17,7 +17,7 @@ DATABASE_URL = os.getenv(
 # Create database engine
 engine = create_engine(DATABASE_URL)
 
-@app.get("/health")
+@app.api_route("/health", methods=["GET", "HEAD"])
 def health():
     return {"status": "alive"}
 
